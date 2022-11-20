@@ -1,7 +1,7 @@
 {
-    "name": "react-native-video",
+    "name": "react-native-video-videoview",
     "version": "5.1.0-alpha5",
-    "description": "A <Video /> element for react-native",
+    "description": "A <VideoView /> element for react-native",
     "main": "Video.js",
     "license": "MIT",
     "author": "Brent Vatne <brentvatne@gmail.com> (https://github.com/brentvatne)",
@@ -25,7 +25,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git@github.com:react-native-community/react-native-video.git"
+        "url": "git@github.com:react-native-community/react-native-video-videoview.git"
     },
     "devDependencies": {
         "@react-native-community/eslint-config": "0.0.7",
@@ -45,7 +45,6 @@
         "lint": "yarn eslint *.js"
     },
     "files": [
-        "android-exoplayer",
         "android",
         "dom",
         "ios",
@@ -53,6 +52,6 @@
         "FilterType.js",
         "TextTrackType.js",
         "VideoResizeMode.js",
-        "react-native-video.podspec"
+        "react-native-video-videoview.podspec"
     ]
 }
