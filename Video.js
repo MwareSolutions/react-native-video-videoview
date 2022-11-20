@@ -339,7 +339,7 @@ export default class Video extends Component {
 
     return (
       <View style={nativeProps.style}>
-        <RCTVideo
+        <RCTVideoView
           ref={this._assignRoot}
           {...nativeProps}
           style={StyleSheet.absoluteFill}
@@ -511,7 +511,7 @@ Video.propTypes = {
   ...ViewPropTypes,
 };
 
-const RCTVideo = requireNativeComponent('RCTVideo', Video, {
+const RCTVideoView = requireNativeComponent('RCTVideoView', Video, {
   nativeOnly: {
     src: true,
     seek: true,
