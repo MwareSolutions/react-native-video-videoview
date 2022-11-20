@@ -1,4 +1,4 @@
-package com.brentvatne.react;
+package com.brentvatne.react.vv;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
