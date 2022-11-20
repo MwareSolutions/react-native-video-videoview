@@ -2,7 +2,7 @@
 
 import { RCTViewManager } from "react-native-dom";
 
-import RCTVideo from "./RCTVideo";
+import RCTVideoView from "./RCTVideoView";
 import resizeModes from "./resizeModes";
 
 import type { VideoSource } from "./types";
@@ -11,7 +11,7 @@ class RCTVideoManager extends RCTViewManager {
   static moduleName = "RCTVideoManager";
 
   view() {
-    return new RCTVideo(this.bridge);
+    return new RCTVideoView(this.bridge);
   }
 
   describeProps() {
@@ -43,39 +43,39 @@ class RCTVideoManager extends RCTViewManager {
     // not currently working
   }
 
-  setControls(view: RCTVideo, value: boolean) {
+  setControls(view: RCTVideoView, value: boolean) {
     view.controls = value;
   }
 
-  setId(view: RCTVideo, value: string) {
+  setId(view: RCTVideoView, value: string) {
     view.id = value;
   }
 
-  setMuted(view: RCTVideo, value: boolean) {
+  setMuted(view: RCTVideoView, value: boolean) {
     view.muted = value;
   }
 
-  setPaused(view: RCTVideo, value: boolean) {
+  setPaused(view: RCTVideoView, value: boolean) {
     view.paused = value;
   }
 
-  setRate(view: RCTVideo, value: number) {
+  setRate(view: RCTVideoView, value: number) {
     view.rate = value;
   }
 
-  setRepeat(view: RCTVideo, value: boolean) {
+  setRepeat(view: RCTVideoView, value: boolean) {
     view.repeat = value;
   }
 
-  setResizeMode(view: RCTVideo, value: number) {
+  setResizeMode(view: RCTVideoView, value: number) {
     view.resizeMode = value;
   }
 
-  setSeek(view: RCTVideo, value: number) {
+  setSeek(view: RCTVideoView, value: number) {
     view.seek = value;
   }
 
-  setSource(view: RCTVideo, value: VideoSource) {
+  setSource(view: RCTVideoView, value: VideoSource) {
     view.source = value;
   }
 

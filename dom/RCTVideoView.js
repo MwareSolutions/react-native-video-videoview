@@ -5,9 +5,9 @@ import shaka from "shaka-player";
 
 import resizeModes from "./resizeModes";
 import type { VideoSource } from "./types";
-import RCTVideoEvent from "./RCTVideoEvent";
+import RCTVideoViewEvent from "./RCTVideoEvent";
 
-class RCTVideo extends RCTView {
+class RCTVideoView extends RCTView {
   playPromise: Promise<void> = Promise.resolve();
   progressTimer: number;
   videoElement: HTMLVideoElement;
@@ -254,7 +254,7 @@ class RCTVideo extends RCTView {
   }
 
   sendEvent(eventName, payload) {
-    const event = new RCTVideoEvent(eventName, this.reactTag, 0, payload);
+    const event = new RCTVideoViewEvent(eventName, this.reactTag, 0, payload);
     this.eventDispatcher.sendEvent(event);
   }
 
@@ -273,6 +273,6 @@ class RCTVideo extends RCTView {
   }
 }
 
-customElements.define("rct-video", RCTVideo);
+customElements.define("rct-videoview", RCTVideoView);
 
-export default RCTVideo;
+export default RCTVideoView;
